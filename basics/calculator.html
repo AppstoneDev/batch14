@@ -1,0 +1,37 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <input 
+            placeholder="enter num1"
+            id="num1"
+        />
+        <input 
+            placeholder="enter num2"
+            id="num2" 
+        />
+        <button onclick="add()">
+            Add
+        </button>
+        <button>
+            subtract
+        </button>
+        <button>
+            multiply
+        </button>
+        <button>
+            divide
+        </button>
+
+        <script>
+            function add(){
+                var num1 = document.getElementById("num1").value;
+                var num2 = document.getElementById("num2").value;
+
+                var result = parseInt(num1) + parseInt(num2);
+                console.log(result);
+            }
+        </script>
+    </body>
+</html>
