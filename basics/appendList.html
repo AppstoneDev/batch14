@@ -1,0 +1,29 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <input 
+            placeholder="enter a task"
+            id="taskinput"
+        />
+        <button onclick="taskAdder()">
+            add task
+        </button>
+
+        <ol id="tasklist">
+            
+        </ol>
+
+        <script>
+            var alltasks = "";
+            function taskAdder(){
+                var task = document.getElementById("taskinput").value;
+                task = "<li>"+ task + "</li>";
+                
+                alltasks = alltasks + task;
+                document.getElementById("tasklist").innerHTML = alltasks;
+            }
+        </script>
+    </body>
+</html>
