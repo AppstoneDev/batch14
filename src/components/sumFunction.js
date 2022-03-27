@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function Gautam() {
+export default function SumFunction() {
     const [num1, setNum1] = useState(0);
     const [num2, setNum2] = useState(0);
     const [sum, setSum] = useState(0);
@@ -9,7 +9,7 @@ export default function Gautam() {
         <div>
             <input
                 placeholder="enter number 1"
-                onChange={(e) => { setNum1(parseInt(e.target.value)) }}
+                onChange={(e) => { setNum1(e.target.value) }}
             />
 
             <input
