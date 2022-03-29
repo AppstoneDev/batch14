@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
 
-import SumFunction from "./components/sumClass";
+import ConditionalRendering from "./components/lifecycle/conditionalRendering";
 
 ReactDOM.render(
-    <SumFunction />
+    <ConditionalRendering />
   ,
   document.getElementById('root')
 );
