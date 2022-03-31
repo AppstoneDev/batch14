@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
 
-import ConditionalRendering from "./components/lifecycle/conditionalRendering";
+import Fetcher from "./components/fetch/fetcher";
 
 ReactDOM.render(
-    <ConditionalRendering />
+    <Fetcher />
   ,
   document.getElementById('root')
 );
