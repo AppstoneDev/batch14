@@ -1,0 +1,7 @@
+.mydiv{
+    height: 200px;
+    width: 300px;
+    color: green;
+    background-image: url('https://m.media-amazon.com/images/I/81mcoU6-afL._SL1200_.jpg');
+    background-size: cover;
+}

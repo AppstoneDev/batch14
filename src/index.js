@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
-
-import Fetcher from "./components/fetch/fetcher";
+import ConditionalRendering from "./components/recap/conditionalRendering";
 
 ReactDOM.render(
-    <Fetcher />
+  <ConditionalRendering />
   ,
   document.getElementById('root')
 );
