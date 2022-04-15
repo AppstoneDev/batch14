@@ -7,11 +7,30 @@ import "./style.css";
 
 export default function ConditionalRendering() {
     const [name, setName] = useState("Akash");
-    const [colors, setColors] = useState(["green", "yellow", "orange"]);
+    const [colors, setColors] = useState(["green", "yellow", "orange", "purple", "blue"]);
     const [condition, setCondition] = useState(true);
+    const [selectedColor, setSelectedColor] = useState(0);
+    const [toggle, setToggle] = useState(true);
     const [mystyle, setStyle] = useState({
         backgroundColor: "green", height: 200, width: 200
     })
+
+
+
+    function handleClick() {
+        setToggle(!toggle);
+        setStyle({
+            backgroundColor: toggle ? "green" : "yellow", height: 200, width: 200
+        })
+    }
+
+    function handleClick2(){
+        setSelectedColor(selectedColor+1);
+        setStyle({
+            backgroundColor: colors[selectedColor%colors.length], height: 200, width: 200
+        })
+    }
+
     return (
         <div>
             {condition === true ? "Condition is true" : "Condition is false"}
@@ -25,7 +44,9 @@ export default function ConditionalRendering() {
             <div style={mystyle}>
 
             </div>
-            <button>Change color</button>
+            <button
+                onClick={() => { handleClick2() }}
+            >Change color</button>
         </div>
     )
 }
