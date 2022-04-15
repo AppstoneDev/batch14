@@ -2,9 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
 import ConditionalRendering from "./components/recap/conditionalRendering";
+import Calculator from "./components/mapreduce/calculator";
 
 ReactDOM.render(
-  <ConditionalRendering />
+  <Calculator />
   ,
   document.getElementById('root')
 );

@@ -7,7 +7,8 @@ export default class SumClass extends React.Component {
     this.state = {
       num1: 0,
       num2: 0,
-      sum: 0
+      sum: 0,
+      arr: [10, 20, 30, 40, 50]
     }
   }
 

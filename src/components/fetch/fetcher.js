@@ -21,8 +21,7 @@ export default function Fetcher() {
 
       {users.map((user, index) => {
         return (<div>{user.first_name} {user.last_name}</div>)
-      }
-      )}
+      })}
     </div>
   )
 }
