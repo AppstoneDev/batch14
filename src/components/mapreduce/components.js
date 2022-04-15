@@ -1,17 +1,17 @@
 export default function Sum(props) {
     return (
-        <div>{props.vala + props.valb}</div>
+        <div>sum is: {props.vala + props.valb}</div>
     )
 }
 
 export function Difference(props) {
     return (
-        <div>{props.vala - props.valb}</div>
+        <div>difference is: {props.vala - props.valb}</div>
     )
 }
 
 export function Product(props) {
     return (
-        <div>{props.vala * props.valb}</div>
+        <div>product is: {props.vala * props.valb}</div>
     )
 }
